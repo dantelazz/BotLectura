@@ -1,11 +1,21 @@
 from PIL import Image
 from pytesseract import *
+import os
 
 pytesseract.tesseract_cmd = r'C:\Users\dlazzarin\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
 
-img = Image.open(r"C:\Users\dlazzarin\Desktop\iamgen\image1.png")
+archivo = "r"C:\Users\dlazzarin\Desktop\iamgen\image.png""
+nombre_nuevo = "/home/decodigo/Documentos/python/archivos/archivo_renombrado.txt"
+
+img = Image.open(r"C:\Users\dlazzarin\Desktop\iamgen\image.png")
 img.show()
 
 resultado = pytesseract.image_to_string(img)
-
 print(resultado)
+
+descriptions = list()
+clubs = list()
+if description in descriptions and club in clubs:
+    
+
+os.rename(archivo, nombre_nuevo)
