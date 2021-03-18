@@ -1,0 +1,11 @@
+from PIL import Image
+from pytesseract import *
+
+pytesseract.tesseract_cmd = r'C:\Users\dlazzarin\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
+
+img = Image.open(r"C:\Users\dlazzarin\Desktop\iamgen\image1.png")
+img.show()
+
+resultado = pytesseract.image_to_string(img)
+
+print(resultado)
